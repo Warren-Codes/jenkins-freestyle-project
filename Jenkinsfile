@@ -36,7 +36,7 @@ pipeline {
 
             steps {
 
-                sh 'cat ./var/lib/jenkins/workspace/pipeline-tutorial/testfile.txt'
+                sh 'cat ./testfile.txt'
 
                 sh 'echo "Deploying..."'
 
