@@ -18,7 +18,7 @@ pipeline{
 
       steps{
 
-        sh echo "Hello, World!" > ~/jenkins-tutorial-test/file1"
+        sh 'echo "Hello, World!" > ~/jenkins-tutorial-test/file1'
 
       }
 
