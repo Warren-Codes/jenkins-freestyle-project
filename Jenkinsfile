@@ -24,7 +24,7 @@ pipeline {
 
                 sh 'pwd'
 
-                sh 'touch testfile.txt'
+                sh 'echo "Hello, world!" > testfile.txt'
 
                 sh 'ls -l'
 
@@ -36,7 +36,7 @@ pipeline {
 
             steps {
 
-                sh 'cat ./deploy.sh'
+                sh 'cat ./var/lib/jenkins/workspace/pipeline-tutorial/testfile.txt'
 
                 sh 'echo "Deploying..."'
 
